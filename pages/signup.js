@@ -160,7 +160,7 @@ export default function signup({ token, date }) {
                 <div className="form-row mb-4">
                     <div className="col">
 
-                        <input type="text" id="defaultRegisterFormFirstName" onChange={handleFname} className="form-control" placeholder="First name" />
+                        <input type="text" id="defaultRegisterFormFirstName" onChange={handleFname} className="form-control" placeholder="Primeiro Nome" />
                     </div>
                     <br />
                     <div className="col">
