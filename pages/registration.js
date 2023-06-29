@@ -79,18 +79,18 @@ export default function registration({ token, date }) {
             alert("Last Name is not valid!")
             return;
         }
-        // if (ph === "") {
-        //     alert("Enter mobile no!");
-        //     return;
-        // }
-        // if (ph.length != 10) {
-        //     alert("Enter correct mobile number!");
-        //     return;
-        // }
-        // if (ph.search('^[0-9]$') === -1) {
-        //     alert("Enter Valid phone Number!")
-        //     return;
-        // }
+         if (ph === "") {
+             alert("Enter mobile no!");
+             return;
+         }
+         if (ph.length != 10) {
+             alert("Enter correct mobile number!");
+           return;
+         }
+         //if (ph.search('^[0-9]$') === -1) {
+            // alert("Enter Valid phone Number!")
+           // return;
+         //}
         return true;
 
     }
