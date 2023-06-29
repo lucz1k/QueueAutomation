@@ -96,23 +96,23 @@ export default function signup({ token, date }) {
 
     const validate = () => {
         if (fname === "") {
-            alert("Enter First Name!")
+            alert("Informe seu primeiro nome!")
             return;
         }
         if (fname.search('^[A-Za-z]+$') === -1) {
-            alert("First Name is not valid!")
+            alert("Seu primeiro nome não é valido!")
             return;
         }
         if (lname === "")  {
-            alert("Enter Last Name!")
+            alert("Informe seu sobrenome!")
             return;
         }
         if (lname.search('^[A-Za-z]+$') === -1) {
-            alert("Last Name is not valid!")
+            alert("Seu sobrenome não é valido!")
             return;
         }
         if (email === "") {
-            alert("Enter Email!");
+            alert("Digite o email!");
             return;
         }
         if (!String(email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
@@ -134,7 +134,7 @@ export default function signup({ token, date }) {
             alert("Enter Phone Number!");
             return;
         }
-        if(num.length!=10 )
+        if(num.length<=10 )
         {
             alert("Enter Valid phone Number!");
             return;
